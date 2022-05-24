@@ -1,0 +1,304 @@
+@font-face{
+	font-family: 'Montserrat';
+	src: url('../fonts/montserrat-regular-webfont.woff') format('woff'),
+	url('../fonts/montserrat-regular-webfont.woff2') format('woff2');
+}
+
+@font-face{
+	font-family: 'Montserrat';
+	font-weight: bold;
+	src: url('../fonts/montserrat-bold-webfont.woff') format('woff'),
+	url('../fonts/montserrat-bold-webfont.woff2') format('woff2');
+}
+
+@font-face{
+	font-family: 'Montserrat';
+	font-style: italic;
+	src: url('../fonts/montserrat-italic-webfont.woff') format('woff'),
+	url('../fonts/montserrat-italic-webfont.woff2') format('woff2');
+}
+
+@font-face{
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-style: italic;
+	src: url('../fonts/montserrat-bolditalic-webfont.woff') format('woff'),
+	url('../fonts/montserrat-bolditalic-webfont.woff2') format('woff2');
+}
+*{
+  font-family: 'Montserrat';
+  box-sizing: border-box;
+}
+*{
+
+margin:0;
+
+padding:0;
+
+}
+html, body{
+	height:100%;
+}
+body{
+	padding:0;
+	margin:0;
+}
+.caca{
+  word-wrap: break-word !important;
+}
+.header{
+    background: url("../images/bghome.jpg") center center fixed;
+    color: #FFF;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -msn-background-size: cover;
+}
+.header .overlay{
+    background: rgba(0, 0, 0, 0.58);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.header .navbar-default {
+	background-color:transparent !important;
+	border-color:transparent;
+	background-image:none;
+	box-shadow:none;
+}
+.header .navbar-default .navbar-brand{
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.header .navbar-default .navbar-nav>li>a {
+   font-size:28px;
+   color:#fff;
+    border-bottom: 1px solid transparent;
+		transition: color 0.5s !important;
+}
+.header .navbar-default .navbar-nav>li:hover a{
+    color: #333;
+     border-bottom: 1px solid #FFF;
+}
+.inputform{
+	color: white;
+	background-color:transparent;
+	border-color:transparent;
+	background-image:none;
+	box-shadow:none;
+}
+.inputform:hover{
+   border-bottom: 1px solid #FFF;
+}
+.inputform:focus{
+  background-color: transparent;
+	color: white;
+  border:1px solid #FFF;
+}
+.inputform_readonly{
+	color: black;
+	background-color:transparent !important;
+	border-color:transparent;
+	background-image:none;
+	box-shadow:none;
+}
+.inputform_readonly:hover{
+	color: black;
+	background-color:transparent !important;
+	border-color:transparent;
+	background-image:none;
+	box-shadow:none;
+}
+.inputform_readonly:focus{
+	color: black;
+	background-color:transparent !important;
+	border-color:transparent;
+	background-image:none;
+	box-shadow:none;
+}
+.inputarea{
+	color: white;
+	background-color:transparent;
+	border-color:transparent;
+	background-image:none;
+	box-shadow:none;
+	border: 1px solid #FFF;
+}
+.inputarea:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+	transition: color 0.5;
+}
+.inputarea:focus{
+  background-color: transparent;
+	color: white;
+  border:2px solid #FFF;
+}
+.link{
+	color: black;
+}
+.link:hover{
+	color: black;
+	text-decoration: underline;
+}
+.divlink{
+	color: white;
+}
+.divlink:hover{
+	color: white;
+	text-decoration: none;
+}
+
+.inputsearch{
+	color: white;
+  background-color:transparent;
+  border-color:transparent;
+  background-image:none;
+  box-shadow:none;
+}
+
+.inputsearch:hover{
+  color: black;
+   border-bottom: 1px solid #FFF;
+}
+.inputsearch:focus{
+  background-color: transparent;
+  border:1px solid #FFF;
+}
+
+.header .navbar-toggle {
+      margin:10px 0;
+      background:#36C;
+      color:#FFF;
+}
+.button{
+  text-decoration: none;
+  font-size: 28px;
+  color: #FFF;
+	transition: color 0.5s !important;
+}
+.tesxtsize{
+	font-size: 22px;
+}
+.like{
+	width : 30px;
+  height : 30px;
+  display : block;
+	background-image: url("../images/icons/thumbs-up-regular.svg");
+	transition: 0.5s;
+}
+.like:hover{
+	background-image: url("../images/icons/thumbs-up-solid.svg");
+
+}
+.dislike{
+	width : 30px;
+  height : 30px;
+  display : block;
+	background-image: url("../images/icons/thumbs-down-regular.svg") ;
+	transition: 0.5s;
+}
+.dislike:hover{
+	background-image: url("../images/icons/thumbs-down-solid.svg");
+
+}
+/* MENU HAMBURGER  */
+.button:hover{
+  text-decoration: none;
+  color: #333;
+   border-bottom: 1px solid #FFF;
+}
+
+/* test menu hamburger */
+#hamburger-menu{
+  display: inline;
+}
+ #hamburger-button{
+
+ }
+ #hamburger-overlay{
+   display: none;
+   position: fixed;
+   z-index: 10;
+   top:0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0,0,0, .4);
+ }
+
+#hamburger-topbar{
+  display: none;
+  position: fixed;
+  width: 84%;
+  z-index:20;
+  height: 100%;
+  top:0;
+  left: 0;
+  background-color: grey;
+  transform: translateX(-100%);
+  transition: transform .2s ease-out;
+}
+#hamburger-topbar li {
+  display: block;
+}
+#hamburger-topbar-header{
+  background: url(../images/bghome.jpg) center;
+  height: 128px;
+  background-size: cover;
+}
+#hamburger-topbar-body{
+  padding: 16px 8px;
+}
+#hamburger-topbar-body li:before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+}
+#hamburger-topbar-body  li:first-child:before {
+  background-image: url(../images/icons/feather-alt-solid.svg);
+}
+#hamburger-topbar-body  li:nth-child(2):before {
+  background-image: url(../images/icons/readme-brands.svg);
+}
+#hamburger-topbar-body  li:last-child:before {
+  background-image: url(../images/icons/medal-solid.svg);
+}
+#hamburger-topbar-body .button {
+  float: none;
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+  height: auto;
+  padding: 10px;
+  line-height: inherit;
+}
+@media screen and (max-width: 991.98px){
+  #hamburger-content{
+    display: none;
+  }
+  #hamburger-button, #hamburger-topbar,
+  .hamburger-activated #hamburger-overlay{
+    display: block;
+  }
+  .hamburger-activated #hamburger-topbar{
+    transform: translateX(0);
+  }
+
+}
+/* FIN DU MENU HAMBURGER */
+.box-form{
+	background-color: rgba(0,0,0,.5);
+	box-shadow:0px 0px 20px black;
+}
+/*test*/
